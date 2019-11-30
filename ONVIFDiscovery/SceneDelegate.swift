@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  ONVIFDiscovery
-//
-//  Created by admin on 2019-11-28.
-//  Copyright © 2019 home. All rights reserved.
-//
 
 import UIKit
 
