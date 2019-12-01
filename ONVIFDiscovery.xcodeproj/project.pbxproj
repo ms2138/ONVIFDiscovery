@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3CA1F7812393351600F8DE95 /* DiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1F7802393351600F8DE95 /* DiscoveryViewController.swift */; };
+		3CA1F783239374F300F8DE95 /* ONVIFQueryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1F782239374F300F8DE95 /* ONVIFQueryService.swift */; };
 		840304CD2390DBBF0059B390 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840304CC2390DBBF0059B390 /* AppDelegate.swift */; };
 		840304CF2390DBBF0059B390 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840304CE2390DBBF0059B390 /* SceneDelegate.swift */; };
 		840304D42390DBBF0059B390 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840304D22390DBBF0059B390 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		3CA1F7802393351600F8DE95 /* DiscoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryViewController.swift; sourceTree = "<group>"; };
+		3CA1F782239374F300F8DE95 /* ONVIFQueryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ONVIFQueryService.swift; sourceTree = "<group>"; };
 		840304C92390DBBF0059B390 /* ONVIFDiscovery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ONVIFDiscovery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		840304CC2390DBBF0059B390 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		840304CE2390DBBF0059B390 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				840304CC2390DBBF0059B390 /* AppDelegate.swift */,
 				840304CE2390DBBF0059B390 /* SceneDelegate.swift */,
 				3CA1F7802393351600F8DE95 /* DiscoveryViewController.swift */,
+				3CA1F782239374F300F8DE95 /* ONVIFQueryService.swift */,
 				840304D22390DBBF0059B390 /* Main.storyboard */,
 				840304D52390DBC20059B390 /* Assets.xcassets */,
 				840304D72390DBC20059B390 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				840304CD2390DBBF0059B390 /* AppDelegate.swift in Sources */,
 				3CA1F7812393351600F8DE95 /* DiscoveryViewController.swift in Sources */,
 				840304CF2390DBBF0059B390 /* SceneDelegate.swift in Sources */,
+				3CA1F783239374F300F8DE95 /* ONVIFQueryService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
