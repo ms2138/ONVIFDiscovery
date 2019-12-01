@@ -56,6 +56,16 @@
 			path = UDPBroadcast;
 			sourceTree = "<group>";
 		};
+		3CA1F78D2393779A00F8DE95 /* ONVIF */ = {
+			isa = PBXGroup;
+			children = (
+				3CA1F782239374F300F8DE95 /* ONVIFQueryService.swift */,
+				3CA1F78B2393773A00F8DE95 /* ONVIFDiscovery.swift */,
+				3CA1F7842393755100F8DE95 /* ONVIFRequest.swift */,
+			);
+			path = ONVIF;
+			sourceTree = "<group>";
+		};
 		840304C02390DBBF0059B390 = {
 			isa = PBXGroup;
 			children = (
@@ -78,9 +88,7 @@
 				840304CC2390DBBF0059B390 /* AppDelegate.swift */,
 				840304CE2390DBBF0059B390 /* SceneDelegate.swift */,
 				3CA1F7802393351600F8DE95 /* DiscoveryViewController.swift */,
-				3CA1F782239374F300F8DE95 /* ONVIFQueryService.swift */,
-				3CA1F78B2393773A00F8DE95 /* ONVIFDiscovery.swift */,
-				3CA1F7842393755100F8DE95 /* ONVIFRequest.swift */,
+				3CA1F78D2393779A00F8DE95 /* ONVIF */,
 				3CA1F786239375A200F8DE95 /* UDPBroadcast */,
 				840304D22390DBBF0059B390 /* Main.storyboard */,
 				840304D52390DBC20059B390 /* Assets.xcassets */,
