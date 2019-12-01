@@ -18,6 +18,7 @@
 		840304D42390DBBF0059B390 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840304D22390DBBF0059B390 /* Main.storyboard */; };
 		840304D62390DBC20059B390 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840304D52390DBC20059B390 /* Assets.xcassets */; };
 		840304D92390DBC20059B390 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840304D72390DBC20059B390 /* LaunchScreen.storyboard */; };
+		CB8191CB7FDFADB34822B760 /* Pods_ONVIFDiscovery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C6962289845EA3841E485C /* Pods_ONVIFDiscovery.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,9 @@
 		840304D52390DBC20059B390 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		840304D82390DBC20059B390 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		840304DA2390DBC20059B390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BC1BCE362E3A3A48F2CAD91 /* Pods-ONVIFDiscovery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ONVIFDiscovery.debug.xcconfig"; path = "Target Support Files/Pods-ONVIFDiscovery/Pods-ONVIFDiscovery.debug.xcconfig"; sourceTree = "<group>"; };
+		8E81ED3156212EACCBC483CA /* Pods-ONVIFDiscovery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ONVIFDiscovery.release.xcconfig"; path = "Target Support Files/Pods-ONVIFDiscovery/Pods-ONVIFDiscovery.release.xcconfig"; sourceTree = "<group>"; };
+		D6C6962289845EA3841E485C /* Pods_ONVIFDiscovery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ONVIFDiscovery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB8191CB7FDFADB34822B760 /* Pods_ONVIFDiscovery.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +76,8 @@
 			children = (
 				840304CB2390DBBF0059B390 /* ONVIFDiscovery */,
 				840304CA2390DBBF0059B390 /* Products */,
+				8DAC4A9273F3910896DB11AA /* Pods */,
+				F6A534DB4DA7F1B5BD231582 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +105,24 @@
 			path = ONVIFDiscovery;
 			sourceTree = "<group>";
 		};
+		8DAC4A9273F3910896DB11AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8BC1BCE362E3A3A48F2CAD91 /* Pods-ONVIFDiscovery.debug.xcconfig */,
+				8E81ED3156212EACCBC483CA /* Pods-ONVIFDiscovery.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F6A534DB4DA7F1B5BD231582 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6C6962289845EA3841E485C /* Pods_ONVIFDiscovery.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -105,9 +130,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 840304DD2390DBC20059B390 /* Build configuration list for PBXNativeTarget "ONVIFDiscovery" */;
 			buildPhases = (
+				EC0E63FB0B16952DEA0C0B27 /* [CP] Check Pods Manifest.lock */,
 				840304C52390DBBF0059B390 /* Sources */,
 				840304C62390DBBF0059B390 /* Frameworks */,
 				840304C72390DBBF0059B390 /* Resources */,
+				E27E57DDFCCA30A405DE9CBF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,6 +190,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E27E57DDFCCA30A405DE9CBF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ONVIFDiscovery/Pods-ONVIFDiscovery-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ONVIFDiscovery/Pods-ONVIFDiscovery-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ONVIFDiscovery/Pods-ONVIFDiscovery-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC0E63FB0B16952DEA0C0B27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ONVIFDiscovery-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		840304C52390DBBF0059B390 /* Sources */ = {
@@ -318,6 +387,7 @@
 		};
 		840304DE2390DBC20059B390 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BC1BCE362E3A3A48F2CAD91 /* Pods-ONVIFDiscovery.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -335,6 +405,7 @@
 		};
 		840304DF2390DBC20059B390 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E81ED3156212EACCBC483CA /* Pods-ONVIFDiscovery.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

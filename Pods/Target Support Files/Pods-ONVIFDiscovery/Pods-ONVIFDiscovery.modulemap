@@ -1,0 +1,6 @@
+framework module Pods_ONVIFDiscovery {
+  umbrella header "Pods-ONVIFDiscovery-umbrella.h"
+
+  export *
+  module * { export * }
+}
