@@ -10,6 +10,8 @@
 		3CA1F7812393351600F8DE95 /* DiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1F7802393351600F8DE95 /* DiscoveryViewController.swift */; };
 		3CA1F783239374F300F8DE95 /* ONVIFQueryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1F782239374F300F8DE95 /* ONVIFQueryService.swift */; };
 		3CA1F7852393755100F8DE95 /* ONVIFRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1F7842393755100F8DE95 /* ONVIFRequest.swift */; };
+		3CA1F789239375A200F8DE95 /* UDPBroadcastConnectionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1F787239375A200F8DE95 /* UDPBroadcastConnectionError.swift */; };
+		3CA1F78A239375A200F8DE95 /* UDPBroadcastConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1F788239375A200F8DE95 /* UDPBroadcastConnection.swift */; };
 		840304CD2390DBBF0059B390 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840304CC2390DBBF0059B390 /* AppDelegate.swift */; };
 		840304CF2390DBBF0059B390 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840304CE2390DBBF0059B390 /* SceneDelegate.swift */; };
 		840304D42390DBBF0059B390 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840304D22390DBBF0059B390 /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 		3CA1F7802393351600F8DE95 /* DiscoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryViewController.swift; sourceTree = "<group>"; };
 		3CA1F782239374F300F8DE95 /* ONVIFQueryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ONVIFQueryService.swift; sourceTree = "<group>"; };
 		3CA1F7842393755100F8DE95 /* ONVIFRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ONVIFRequest.swift; sourceTree = "<group>"; };
+		3CA1F787239375A200F8DE95 /* UDPBroadcastConnectionError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UDPBroadcastConnectionError.swift; sourceTree = "<group>"; };
+		3CA1F788239375A200F8DE95 /* UDPBroadcastConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UDPBroadcastConnection.swift; sourceTree = "<group>"; };
 		840304C92390DBBF0059B390 /* ONVIFDiscovery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ONVIFDiscovery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		840304CC2390DBBF0059B390 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		840304CE2390DBBF0059B390 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CA1F786239375A200F8DE95 /* UDPBroadcast */ = {
+			isa = PBXGroup;
+			children = (
+				3CA1F787239375A200F8DE95 /* UDPBroadcastConnectionError.swift */,
+				3CA1F788239375A200F8DE95 /* UDPBroadcastConnection.swift */,
+			);
+			path = UDPBroadcast;
+			sourceTree = "<group>";
+		};
 		840304C02390DBBF0059B390 = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +78,7 @@
 				3CA1F7802393351600F8DE95 /* DiscoveryViewController.swift */,
 				3CA1F782239374F300F8DE95 /* ONVIFQueryService.swift */,
 				3CA1F7842393755100F8DE95 /* ONVIFRequest.swift */,
+				3CA1F786239375A200F8DE95 /* UDPBroadcast */,
 				840304D22390DBBF0059B390 /* Main.storyboard */,
 				840304D52390DBC20059B390 /* Assets.xcassets */,
 				840304D72390DBC20059B390 /* LaunchScreen.storyboard */,
@@ -147,7 +161,9 @@
 				3CA1F7852393755100F8DE95 /* ONVIFRequest.swift in Sources */,
 				840304CD2390DBBF0059B390 /* AppDelegate.swift in Sources */,
 				3CA1F7812393351600F8DE95 /* DiscoveryViewController.swift in Sources */,
+				3CA1F78A239375A200F8DE95 /* UDPBroadcastConnection.swift in Sources */,
 				840304CF2390DBBF0059B390 /* SceneDelegate.swift in Sources */,
+				3CA1F789239375A200F8DE95 /* UDPBroadcastConnectionError.swift in Sources */,
 				3CA1F783239374F300F8DE95 /* ONVIFQueryService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
