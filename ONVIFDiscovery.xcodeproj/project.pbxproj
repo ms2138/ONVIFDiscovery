@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		3CA1F789239375A200F8DE95 /* UDPBroadcastConnectionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1F787239375A200F8DE95 /* UDPBroadcastConnectionError.swift */; };
 		3CA1F78A239375A200F8DE95 /* UDPBroadcastConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1F788239375A200F8DE95 /* UDPBroadcastConnection.swift */; };
 		3CA1F78C2393773A00F8DE95 /* ONVIFDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1F78B2393773A00F8DE95 /* ONVIFDiscovery.swift */; };
+		3CA1F78F2394834500F8DE95 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1F78E2394834500F8DE95 /* Helpers.swift */; };
 		840304CD2390DBBF0059B390 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840304CC2390DBBF0059B390 /* AppDelegate.swift */; };
 		840304CF2390DBBF0059B390 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840304CE2390DBBF0059B390 /* SceneDelegate.swift */; };
 		840304D42390DBBF0059B390 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840304D22390DBBF0059B390 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 		3CA1F787239375A200F8DE95 /* UDPBroadcastConnectionError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UDPBroadcastConnectionError.swift; sourceTree = "<group>"; };
 		3CA1F788239375A200F8DE95 /* UDPBroadcastConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UDPBroadcastConnection.swift; sourceTree = "<group>"; };
 		3CA1F78B2393773A00F8DE95 /* ONVIFDiscovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ONVIFDiscovery.swift; sourceTree = "<group>"; };
+		3CA1F78E2394834500F8DE95 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		840304C92390DBBF0059B390 /* ONVIFDiscovery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ONVIFDiscovery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		840304CC2390DBBF0059B390 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		840304CE2390DBBF0059B390 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			children = (
 				840304CC2390DBBF0059B390 /* AppDelegate.swift */,
 				840304CE2390DBBF0059B390 /* SceneDelegate.swift */,
+				3CA1F78E2394834500F8DE95 /* Helpers.swift */,
 				3CA1F7802393351600F8DE95 /* DiscoveryViewController.swift */,
 				3CA1F78D2393779A00F8DE95 /* ONVIF */,
 				3CA1F786239375A200F8DE95 /* UDPBroadcast */,
@@ -111,7 +114,6 @@
 				8BC1BCE362E3A3A48F2CAD91 /* Pods-ONVIFDiscovery.debug.xcconfig */,
 				8E81ED3156212EACCBC483CA /* Pods-ONVIFDiscovery.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -242,6 +244,7 @@
 				3CA1F78C2393773A00F8DE95 /* ONVIFDiscovery.swift in Sources */,
 				840304CD2390DBBF0059B390 /* AppDelegate.swift in Sources */,
 				3CA1F7812393351600F8DE95 /* DiscoveryViewController.swift in Sources */,
+				3CA1F78F2394834500F8DE95 /* Helpers.swift in Sources */,
 				3CA1F78A239375A200F8DE95 /* UDPBroadcastConnection.swift in Sources */,
 				840304CF2390DBBF0059B390 /* SceneDelegate.swift in Sources */,
 				3CA1F789239375A200F8DE95 /* UDPBroadcastConnectionError.swift in Sources */,
