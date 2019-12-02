@@ -6,11 +6,17 @@ class TableBackgroundView: UIView {
     let actionButton: UIButton
     let activityIndicator: UIActivityIndicatorView
     let stackView: UIStackView
+    var actionButtonTitle: String {
+        willSet {
+            actionButton.setTitle(newValue, for: .normal)
+        }
+    }
     var message: String {
         willSet {
             messageLabel.text = newValue
         }
     }
+    var handler: (() -> Void)?
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -37,6 +43,7 @@ class TableBackgroundView: UIView {
         self.stackView.spacing = 8.0
 
         self.message = "Label"
+        self.actionButtonTitle = "Button"
 
         super.init(frame: frame)
 
@@ -46,6 +53,8 @@ class TableBackgroundView: UIView {
         stackView.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
         stackView.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
         stackView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+
+        actionButton.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
     }
 }
 
@@ -84,6 +93,14 @@ extension TableBackgroundView {
             }
         } else {
             actionButton.alpha = alpha
+        }
+    }
+}
+
+extension TableBackgroundView {
+    @objc fileprivate func buttonPressed() {
+        if (handler != nil) {
+            handler!()
         }
     }
 }
