@@ -4,9 +4,29 @@ import UIKit
 class DiscoveryViewController: UITableViewController {
     private let reuseIdentifier = "DeviceCell"
     private var discoveredDevices = [ONVIFDiscovery]()
+    private lazy var queryService = ONVIFQueryService()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+}
+
+extension DiscoveryViewController {
+    // MARK: - ONVIF Queries
+
+    func getDevice(completion: @escaping (ONVIFDiscovery) -> Void) {
+        do {
+            try queryService.performONVIFDiscovery { (discoveredDevice, error) in
+                if let error = error {
+                    debugLog("Error: \(error)")
+                }
+                if let discoveredDevice = discoveredDevice {
+                    completion(discoveredDevice)
+                }
+            }
+        } catch {
+            debugLog("Failed to perform UDP broadcast")
+        }
     }
 }
 
