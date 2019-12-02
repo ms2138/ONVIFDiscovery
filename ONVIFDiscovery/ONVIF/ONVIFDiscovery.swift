@@ -6,3 +6,9 @@ struct ONVIFDiscovery {
     let ipAddress: String
     let deviceService: URL
 }
+
+extension ONVIFDiscovery: Equatable {
+    static func == (lhs: ONVIFDiscovery, rhs: ONVIFDiscovery) -> Bool {
+        return lhs.ipAddress == rhs.ipAddress
+    }
+}
