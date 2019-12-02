@@ -1,7 +1,7 @@
 
 import UIKit
 
-class DiscoveryViewController: UITableViewController {
+class DiscoveryViewController: UITableViewController, NoContentBackground {
     private let reuseIdentifier = "DeviceCell"
     private var discoveredDevices = [ONVIFDiscovery]()
     private lazy var queryService = ONVIFQueryService()
@@ -13,14 +13,18 @@ class DiscoveryViewController: UITableViewController {
         title = "Devices"
 
         backgroundView.frame = view.frame
+        backgroundView.messageLabel.text = "Peform device discovery"
+        backgroundView.actionButtonTitle = "Start"
+        backgroundView.handler = {
+            self.performDeviceDiscovery()
+        }
         tableView.backgroundView = backgroundView
-
-        performDeviceDiscovery()
+        hideBackgroundView()
     }
 }
 
 extension DiscoveryViewController {
-    // MARK: - Create and find devices
+    // MARK: - Discover devices
 
     func performDeviceDiscovery() {
         getDevice { [weak self] (device) in
@@ -66,6 +70,14 @@ extension DiscoveryViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let deviceCount = discoveredDevices.count
+
+        if (deviceCount > 0){
+            hideBackgroundView()
+        } else {
+            showBackgroundView()
+        }
+        
         return discoveredDevices.count
     }
 
