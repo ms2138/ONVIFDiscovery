@@ -6,6 +6,11 @@ class TableBackgroundView: UIView {
     let actionButton: UIButton
     let activityIndicator: UIActivityIndicatorView
     let stackView: UIStackView
+    var message: String {
+        willSet {
+            messageLabel.text = newValue
+        }
+    }
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -23,13 +28,15 @@ class TableBackgroundView: UIView {
         self.activityIndicator = UIActivityIndicatorView(style: .large)
         self.activityIndicator.color = .darkGray
 
-        stackView = UIStackView(arrangedSubviews: [self.messageLabel,
-                                                   self.actionButton,
-                                                   self.activityIndicator])
-        stackView.axis = .vertical
-        stackView.alignment = .fill
-        stackView.distribution = .equalSpacing
-        stackView.spacing = 8.0
+        self.stackView = UIStackView(arrangedSubviews: [self.messageLabel,
+                                                        self.actionButton,
+                                                        self.activityIndicator])
+        self.stackView.axis = .vertical
+        self.stackView.alignment = .fill
+        self.stackView.distribution = .equalSpacing
+        self.stackView.spacing = 8.0
+
+        self.message = "Label"
 
         super.init(frame: frame)
 
