@@ -15,6 +15,7 @@
 		3CA1F78C2393773A00F8DE95 /* ONVIFDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1F78B2393773A00F8DE95 /* ONVIFDiscovery.swift */; };
 		3CA1F78F2394834500F8DE95 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1F78E2394834500F8DE95 /* Helpers.swift */; };
 		3CA1F791239484C600F8DE95 /* TableBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1F790239484C600F8DE95 /* TableBackgroundView.swift */; };
+		3CA1F7932394E5A500F8DE95 /* NoContentBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1F7922394E5A500F8DE95 /* NoContentBackground.swift */; };
 		840304CD2390DBBF0059B390 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840304CC2390DBBF0059B390 /* AppDelegate.swift */; };
 		840304CF2390DBBF0059B390 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840304CE2390DBBF0059B390 /* SceneDelegate.swift */; };
 		840304D42390DBBF0059B390 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840304D22390DBBF0059B390 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		3CA1F78B2393773A00F8DE95 /* ONVIFDiscovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ONVIFDiscovery.swift; sourceTree = "<group>"; };
 		3CA1F78E2394834500F8DE95 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		3CA1F790239484C600F8DE95 /* TableBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableBackgroundView.swift; sourceTree = "<group>"; };
+		3CA1F7922394E5A500F8DE95 /* NoContentBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoContentBackground.swift; sourceTree = "<group>"; };
 		840304C92390DBBF0059B390 /* ONVIFDiscovery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ONVIFDiscovery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		840304CC2390DBBF0059B390 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		840304CE2390DBBF0059B390 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				840304CE2390DBBF0059B390 /* SceneDelegate.swift */,
 				3CA1F78E2394834500F8DE95 /* Helpers.swift */,
 				3CA1F790239484C600F8DE95 /* TableBackgroundView.swift */,
+				3CA1F7922394E5A500F8DE95 /* NoContentBackground.swift */,
 				3CA1F7802393351600F8DE95 /* DiscoveryViewController.swift */,
 				3CA1F78D2393779A00F8DE95 /* ONVIF */,
 				3CA1F786239375A200F8DE95 /* UDPBroadcast */,
@@ -253,6 +256,7 @@
 				3CA1F791239484C600F8DE95 /* TableBackgroundView.swift in Sources */,
 				3CA1F789239375A200F8DE95 /* UDPBroadcastConnectionError.swift in Sources */,
 				3CA1F783239374F300F8DE95 /* ONVIFQueryService.swift in Sources */,
+				3CA1F7932394E5A500F8DE95 /* NoContentBackground.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
