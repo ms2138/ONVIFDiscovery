@@ -10,6 +10,8 @@ class DiscoveryViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = "Devices"
+
         backgroundView.frame = view.frame
         tableView.backgroundView = backgroundView
 
