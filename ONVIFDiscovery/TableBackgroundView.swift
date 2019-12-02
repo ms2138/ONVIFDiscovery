@@ -65,6 +65,17 @@ extension TableBackgroundView {
 }
 
 extension TableBackgroundView {
+    fileprivate func toggleMessageLabel(animated: Bool) {
+        let alpha: CGFloat = messageLabel.alpha == 1.0 ? 0.0 : 1.0
+        if animated == true {
+            UIView.animate(withDuration: 1.0) {
+                  self.messageLabel.alpha = alpha
+              }
+        } else {
+            messageLabel.alpha = alpha
+        }
+    }
+
     fileprivate func toggleButtonVisibility(animated: Bool) {
         let alpha: CGFloat = actionButton.alpha == 1.0 ? 0.0 : 1.0
         if animated == true {
