@@ -5,9 +5,35 @@ class DiscoveryViewController: UITableViewController {
     private let reuseIdentifier = "DeviceCell"
     private var discoveredDevices = [ONVIFDiscovery]()
     private lazy var queryService = ONVIFQueryService()
+    let backgroundView = TableBackgroundView(frame: .zero)
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        backgroundView.frame = view.frame
+        tableView.backgroundView = backgroundView
+
+        performDeviceDiscovery()
+    }
+}
+
+extension DiscoveryViewController {
+    // MARK: - Create and find devices
+
+    func performDeviceDiscovery() {
+        getDevice { [weak self] (device) in
+            guard let weakSelf = self else { return }
+
+            DispatchQueue.main.async {
+                weakSelf.discoveredDevices.append(device)
+                weakSelf.discoveredDevices.sort { $0.ipAddress < $1.ipAddress }
+                weakSelf.tableView.reloadSections(IndexSet(integer: 0), with: .fade)
+
+                if weakSelf.discoveredDevices.count == 0 {
+                    weakSelf.backgroundView.stopLoadingOperation()
+                }
+            }
+        }
     }
 }
 
