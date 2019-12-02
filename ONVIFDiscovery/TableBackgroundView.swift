@@ -48,3 +48,31 @@ class TableBackgroundView: UIView {
         stackView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
     }
 }
+
+extension TableBackgroundView {
+    func startLoadingOperation() {
+        message = messageLabel.text ?? "Label"
+        messageLabel.text = "Loading"
+        toggleButtonVisibility(animated: false)
+        activityIndicator.startAnimating()
+    }
+
+    func stopLoadingOperation() {
+        messageLabel.text = message
+        toggleButtonVisibility(animated: true)
+        activityIndicator.stopAnimating()
+    }
+}
+
+extension TableBackgroundView {
+    fileprivate func toggleButtonVisibility(animated: Bool) {
+        let alpha: CGFloat = actionButton.alpha == 1.0 ? 0.0 : 1.0
+        if animated == true {
+            UIView.animate(withDuration: 1.0) {
+                self.actionButton.alpha = alpha
+            }
+        } else {
+            actionButton.alpha = alpha
+        }
+    }
+}
