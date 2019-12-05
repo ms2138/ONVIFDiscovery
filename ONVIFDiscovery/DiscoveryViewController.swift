@@ -1,3 +1,10 @@
+//
+//  NoContentBackground.swift
+//  ONVIFDiscovery
+//
+//  Created by mani on 2019-12-02.
+//  Copyright © 2019 mani. All rights reserved.
+//
 
 import UIKit
 
@@ -15,7 +22,7 @@ class DiscoveryViewController: UITableViewController, NoContentBackground {
         backgroundView.frame = view.frame
         backgroundView.messageLabel.text = "Peform device discovery"
         backgroundView.actionButtonTitle = "Start"
-        backgroundView.handler = {
+        backgroundView.handler = { [unowned self] in
             self.performDeviceDiscovery()
         }
         tableView.backgroundView = backgroundView
@@ -27,16 +34,16 @@ extension DiscoveryViewController {
     // MARK: - Discover devices
 
     func performDeviceDiscovery() {
-        getDevice { [weak self] (device) in
-            guard let weakSelf = self else { return }
+        backgroundView.startLoadingOperation()
 
+        getDevice { [unowned self] (device) in
             DispatchQueue.main.async {
-                weakSelf.discoveredDevices.append(device)
-                weakSelf.discoveredDevices.sort { $0.ipAddress < $1.ipAddress }
-                weakSelf.tableView.reloadSections(IndexSet(integer: 0), with: .fade)
+                self.discoveredDevices.append(device)
+                self.discoveredDevices.sort { $0.ipAddress < $1.ipAddress }
+                self.tableView.reloadSections(IndexSet(integer: 0), with: .fade)
 
-                if weakSelf.discoveredDevices.count == 0 {
-                    weakSelf.backgroundView.stopLoadingOperation()
+                if self.discoveredDevices.count == 0 {
+                    self.backgroundView.stopLoadingOperation()
                 }
             }
         }
