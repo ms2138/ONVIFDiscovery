@@ -1,2 +1,5 @@
 # ONVIFDiscovery
-Discover ONVIF based camera devices on your local network
+Discover ONVIF based devices on your local network
+
+# Demo
+![ONVIF Device Discovery - Animated gif demo](demo.gif)
