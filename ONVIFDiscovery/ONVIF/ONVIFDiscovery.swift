@@ -1,5 +1,5 @@
 //
-//  NoContentBackground.swift
+//  ONVIFDiscovery.swift
 //  ONVIFDiscovery
 //
 //  Created by mani on 2019-12-02.
